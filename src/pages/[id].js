@@ -8,7 +8,7 @@ const MovieDetailPage = ({movie}) => {
     const {data: session}= useSession();
     const [showPlayer, setShowPlayer] = useState(false)
 
-    if (!session) return <Login />
+    //if (!session) return <Login />
     
     const trailerIndex = movie.videos.results.findIndex(
         
